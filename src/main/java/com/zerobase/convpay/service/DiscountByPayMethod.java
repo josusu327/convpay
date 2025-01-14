@@ -9,7 +9,7 @@ public class DiscountByPayMethod implements DiscountInterface {
             case MONEY:
                 return payRequest.getPayAmount() * 7 / 10;
             case CARD:
-                return payRequest.getPayAmount();
+                return payRequest.getPayAmount() * 8 / 10;
         }
         return payRequest.getPayAmount();
     }
